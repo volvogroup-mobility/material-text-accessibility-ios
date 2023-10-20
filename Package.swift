@@ -28,6 +28,7 @@ let package = Package(
         .target(
             name: "MDFTextAccessibility",
             path: "src",
-            publicHeadersPath: ".")
+            cSettings: [.headerSearchPath("private")]
+        )
     ]
 )
